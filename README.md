@@ -21,13 +21,21 @@ npm i -S node-sass-chokidar<br>
 npm install --save npm-run-all<br>
 en el package.json cambiar script :build-css  watch-css  start-js  start  build<br>
 
-  "scripts": {
-    "build-css": "node-sass-chokidar --include-path ./src --include-path .node_modules src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path .node_modules src/ -o src/ --watch --recursive",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+  "scripts": {<br>
+    "build-css": "node-sass-chokidar --include-path ./src --include-path .node_modules src/ -o src/",<br>
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path .node_modules src/ -o src/ --watch --recursive",<br>
+    "start-js": "react-scripts start",<br>
+    "start": "npm-run-all -p watch-css start-js",<br>
+    "build": "npm run build-css && react-scripts build",<br>
+    "test": "react-scripts test --env=jsdom",<br>
+    "eject": "react-scripts eject"<br>
+  }<br>
 
+
+How to lint SCSS with stylelint<br>
+
+npm install stylelint -D<br>
+touch .stylelintrc<br>
+include in script packageJson:<br>
+lint-sass": "stylelint --config .stylelintrc src/style/*.scss",<br>
+"stylelint": "stylelint '**/*.scss'",<br>
