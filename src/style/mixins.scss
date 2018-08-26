@@ -1,0 +1,267 @@
+@mixin fillWidth {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@mixin block {
+  display: block;
+  float: left;
+  list-style: none;
+  min-height: 20px;
+  text-decoration: none;
+}
+
+@mixin widthBox {
+  margin: 0 auto auto;
+  position: relative;
+}
+
+@mixin textCategory {
+  color: $secundary-color;
+  font-size: 12px;
+}
+
+@mixin conversionButton {
+  background-color: $background-conversionButton;
+  color: $white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 12px;
+  text-align: center;
+  outline: none;
+  width: 100%;
+  @media (max-width: $mobile-medium-behavior) {
+    max-width: 280px;
+  }
+  @media (max-width: $mobile-small) {
+    max-width: auto;
+    width: 100%;
+  }
+  
+  &:hover {
+    background-color: $background-conversionButton-hover;
+    -webkit-box-shadow: -1px 0 8px 0 rgba(50, 50, 50, 0.44);
+    -moz-box-shadow: -1px 0 8px 0 rgba(50, 50, 50, 0.44);
+    box-shadow: -1px 0 8px 0 rgba(50, 50, 50, 0.44);
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  &:active {
+    background-color: $background-conversionButton-pressed;
+  }
+  &:disabled {
+    background-color: $background-conversionButton-inactive;
+    border: none;
+    color: $gray-85;
+  }
+}
+
+@mixin secundaryButton {
+  background-color: $white;
+  border: solid 2px $gray-7;
+  box-sizing: border-box;
+  color: $black;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 11px 12px;
+  text-align: center;
+  outline: none;
+  width: 100%;
+  @media (max-width: $mobile-medium-behavior) {
+    max-width: 280px;
+  }
+  @media (max-width: $mobile-small) {
+    max-width: auto;
+    width: 100%;
+  }
+  
+  &:hover {
+    border: solid 2px $white;
+    box-sizing: border-box;
+    color: $black;
+    background-color: $white;
+    -webkit-box-shadow: -1px 0 8px 0 rgba(50, 50, 50, 0.44);
+    -moz-box-shadow: -1px 0 8px 0 rgba(50, 50, 50, 0.44);
+    box-shadow: -1px 0 8px 0 rgba(50, 50, 50, 0.44);
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  &:active {
+    background-color: $background-conversionButton-pressed;
+    border: solid 2px $background-conversionButton-pressed;
+    box-sizing: border-box;
+    color: $white;
+  }
+  &:disabled {
+    background-color: $background-conversionButton-inactive;
+    border: none;
+    color: $gray-85;
+  }
+}
+
+@mixin confirmButton {
+  background-color: $background-confirmButton;
+  border: solid 1px $gray-7;
+  color: $gray-80;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: relative;
+  text-align: center;
+  min-width: 160px;
+}
+
+@mixin formLink {
+  color: $background-formLink;
+  padding: 12px 0;
+  position: relative;
+  text-decoration: underline;
+  top: 10px;
+  width: auto;
+
+  &:hover {
+    text-decoration: underline;
+    color: $gray-85;
+  }
+}
+
+@mixin link {
+  color: $black;
+  text-decoration: underline;
+
+  &:hover {
+    color: $gray-85;
+  }
+}
+
+@mixin linkHeader {
+  color: $black;
+  text-decoration: none;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+@mixin linkLessUnderline {
+  color: $black;
+  text-decoration: none;
+
+  &:hover {
+    color: $gray-85;
+    text-decoration: underline;
+  }
+}
+
+//estilos para despliegue categorias nivel 1-2
+@mixin bloqueLista {
+  display: block;
+  overflow: hidden;
+  width: auto;
+}
+
+@mixin bloqueLista_items {
+  cursor: pointer;
+  display: block;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 5px 0 5px 15px;
+  width: auto;
+}
+
+@mixin catTl {
+  float: left;
+  width: 60px;
+}
+
+@mixin catChev {
+  float: right;
+  height: 16px;
+  margin-right: 10px;
+  margin-top: 3px;
+  width: 10px;
+}
+
+@mixin animatedShadow {
+  -webkit-box-shadow: 0 1px 5px $input-shadow;
+  box-shadow: 0 1px 10px $input-shadow;
+  transition: all .4s ease-in-out;
+}
+
+@mixin basicShadow {
+  -webkit-box-shadow: 0 2px 4px $input-shadow;
+  box-shadow: 0 2px 4px $input-shadow;
+}
+
+@mixin animationOpacity {
+  @keyframes animationOpacity {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  animation: animationOpacity 500ms;
+}
+
+@mixin outerSpaceBreak {
+  @media (max-width: $desktop-middle) {
+    box-sizing: border-box;
+    padding: $outerSpace-large;
+  }
+
+  @media (max-width: $desktop-small) {
+    box-sizing: border-box;
+    padding: $outerSpace-middle;
+  }
+
+  @media (max-width: $desktop-small-behavior) {
+    margin: 100px 0 0;
+  }
+
+  @media (max-width: $mobile-medium-behavior) {
+    box-sizing: border-box;
+    padding: $outerSpace-small;
+  }
+}
+
+@mixin hoverProductList {
+  display: block;
+  z-index: $second-step;
+}
+
+@mixin secondPrice {
+  color: $black;
+  font-size: 13px;
+  font-weight: normal;
+  float: left;
+  height: auto;
+  margin: 0 0 3px;
+  padding: 0 0 0 15px;
+  text-align: left;
+  width: 100%;
+}
+
+@mixin mobileBehaviorPLP {
+  float: right;
+  @media (max-width: $mobile-medium-behavior) {
+    line-height: normal;
+    margin: 0 8px 5px;
+    width: 50%;
+  }
+}
+
+@mixin hoverProductList {
+  display: block;
+  z-index: $second-step;
+}

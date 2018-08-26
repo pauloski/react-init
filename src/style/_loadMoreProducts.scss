@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'mixins';
+
+.loadMoreProducts {
+  background: $white;
+  float: right;
+  height: auto;
+  margin: 0 0 0 20px;
+  width: 76.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: $desktop-small-behavior) {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 3em;
+    cursor: pointer;
+    background-color: $gray-7;
+    color: $black;
+    border: 1px solid $gray-20;
+    transition: .5s all ease;
+    @media (max-width: $desktop-small-behavior) {
+      width: 100%;
+      padding: 1em;
+    }
+    img {
+      width: 10px;
+      margin-right: 5px;
+    }
+    p {
+      font-weight: bold;
+    }
+    span {
+      font-weight: 100;
+    }
+    &:hover {
+      background-color: $gray-4;
+    }
+  }
+}

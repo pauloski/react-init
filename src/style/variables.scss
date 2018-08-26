@@ -1,0 +1,146 @@
+//basic color definition
+$black: #000;
+$yellow: #FBD600;
+$white: #FFF;
+$red: #E0000F;
+
+//gray sacale
+$gray-2: #F0F0F0;
+$gray-4: #F5F5F5;
+$gray-7: #EBEBEB;
+$gray-15: #D9D9D9;
+$gray-20: #CCC;
+$gray-40: rgba(255, 255, 255, 0.49);
+$gray-30: rgba(107, 107, 107, 0.7);
+$gray-32: #ADADAD;
+$gray-60: #666;
+$gray-73: #5C5C5C;
+$gray-80: #333333;
+$gray-85: #858585;
+
+$gray-confirmButton-hover: #ADADAD;
+
+//definition of colors according to brand
+$primary-color: $yellow;
+
+$secundary-color: $black;
+
+$text-color-contactHeader: $white;
+
+$links-color-conctactHeader: $white;
+
+$text-color-header: $black;
+
+$links-color-header: $black;
+
+$links-color: $black;
+
+$text-color-cartCounter: $white;
+
+$text-color-categoryMenu: $black;
+
+$background-color-headerMenu: $gray-4;
+
+$background-categoryDisplay: $white;
+
+$background-inputSearch: $white;
+
+$border-category-display: $white;
+
+$border-bottom-headerResponsive: $gray-60;
+
+$border-bottom-categoryMenu: $gray-60;
+
+$input-shadow: $gray-30;
+
+$border-gray-search: $gray-7;
+
+$category-gray-search:#C3C3C3;
+
+$border-gray-input: $gray-20;
+
+$background-input: $white;
+
+$background-conversionButton: $black;
+
+$background-conversionButton-hover: $gray-80;
+
+$background-conversionButton-pressed: $gray-85;
+
+$background-conversionButton-inactive: $gray-7;
+
+$background-conversionButton-active: $gray-85;
+
+$background-confirmButton: $gray-4;
+
+$background-confirmButton-active: $gray-7;
+
+$background-formLink: $black;
+
+$background-faceButton: #3C5A94;
+
+$background-faceButton-hover: #2E4470;
+
+$loading-bar: $yellow;
+
+//text sizes
+
+$font-size-contactHeader: 12px;
+
+$font-size-header: 13px;
+
+//objects width
+
+$width-block-normal:1000px;
+
+$width-block-medium:1260px;
+
+$width-block-large:1280px;
+
+//responsive breaks
+
+$mobile-small: 320px;
+
+$mobile-medium: 720px;
+
+$mobile-large-v: 768px;
+
+$mobile-large: 1024px;
+
+$desktop-small: 1024px;
+
+$desktop-small-v: 1100px;
+
+$desktop-middle: 1280px;
+
+$desktop-large: 1366px;
+
+//responsive breake behavior
+
+$desktop-middle-behavior: $desktop-middle - 1;
+
+$desktop-small-v-behavior: $desktop-small-v - 1;
+
+$desktop-small-behavior: $desktop-small - 1;
+
+$mobile-medium-behavior: $mobile-medium - 1;
+
+$mobile-large-behavior: $mobile-large - 1;
+
+//z-index scale
+
+$first-step: 100;
+
+$second-step: 200;
+
+$third-step: 300;
+
+$fourth-step: 400;
+
+//Padding to grid responsive
+
+$outerSpace-large: 0 40px 80px;
+
+$outerSpace-middle: 0 25px 40px;
+
+$outerSpace-small: 0 15px;
